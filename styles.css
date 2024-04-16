@@ -8,6 +8,7 @@
 
 body {
     background-color: #000;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -17,6 +18,7 @@ section {
     background-image: url(./assets/images/foods/spaghetti-tomato.jpg);
     background-size: cover;
     background-position: center;
+
 }
 
 section nav {
@@ -24,7 +26,7 @@ section nav {
     height: 70px;
     padding-top: 25px;
     background-color: #98e54c;
-    color: #fff;
+    color: #000;
 }
 
 section nav ul {
@@ -42,11 +44,14 @@ section nav ul li {
     transition: 0.4s;
 }
 
-section nav ul li:hover {
-    color: #da6b1d;
+section nav ul li a {
+    color: #000;
+    text-decoration: none;
 }
 
-
+section nav ul li a:hover {
+    color: #da6b1d;
+}
 
 section .text {
     position: absolute;
@@ -91,7 +96,7 @@ section .text .search_bar {
     text-align: center;
     justify-content: center;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 1rem;
     margin-top: 1rem;
     border: 1px solid white;
@@ -108,7 +113,7 @@ section .text .search_bar {
 }
 
 
-section .text .search_bar button {
+section .text .booking button {
     position: absolute;
     left: 400px;
     width: 80px;
@@ -154,11 +159,15 @@ section .text .search_bar button {
 
 .highlight .img_box .img_card .display_text p {
     color: #fff;
-    font-size: 30px;
+    font-size: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.highlight .img_box .img_card .display_text p:hover {
+    color: #da6b1d;
 }
 
 .highlight .img_box .img_card img {
@@ -181,8 +190,15 @@ section .text .search_bar button {
 }
 
 .description-box .d_text h1 {
-    color: #fff;
+    color: #da6b1d;
     font-size: 65px;
+    font-family: 'Roboto';
+    margin-bottom: 45px;
+}
+
+.description-box .d_text h2 {
+    color: #fff;
+    font-size: 45px;
     font-family: 'Roboto';
     margin-bottom: 25px;
 }
@@ -209,12 +225,13 @@ section .text .search_bar button {
     color: #000;
     padding: 10px 130px;
     background: #98e54c;
-    font-size: 15px;
-    border-radius: 15px;
+    font-size: 25px;
+    border-radius: 100px;
+    margin-bottom:20px;
     font-family: "Roboto";
 }
 
-.dis_btn:hover {
+.description-box .d_text .dis_btn:hover {
     background-color: #da6b1d;
 }
 
@@ -241,7 +258,8 @@ section .text .search_bar button {
 }
 
 .menu h1 {
-    color: #fff;
+    color: #da6b1d;
+    font-size: 65px;
     font-family: "Roboto";
     text-align: center;
     margin-bottom: 25px;
@@ -282,7 +300,7 @@ section .text .search_bar button {
 }
 
 .menu .m_box .m_cards .m_btn {
-    width: 130px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,13 +308,15 @@ section .text .search_bar button {
     text-decoration: none;
     color: #000;
     background: #98e54c;
-    padding: 10px 20px;
-    font-size: 15px;
-    border-radius: 15px;
+    padding: 10px 120px;
+    font-size: 20px;
+    border-radius: 100px;
     font-family: "Roboto";
 }
 
-
+.menu .m_box .m_cards .m_btn:hover {
+    background-color: #da6b1d;
+}
 
 
 /*banner*/
@@ -339,20 +359,20 @@ section .text .search_bar button {
 }
 
 .banner .b_text .m_btn {
-    width: 130px;
+    width: 100%;
     position: relative;
     top: 280px;
     left: 14%;
     text-decoration: none;
     color: #000;
     background: #98e54c;
-    padding: 10px 130px;
-    font-size: 15px;
-    border-radius: 15px;
+    padding: 15px 130px;
+    font-size: 20px;
+    border-radius: 100px;
     font-family: "Roboto";
 }
 
-.m_btn:hover {
+.banner .b_text .m_btn:hover {
     background-color: #da6b1d;
 }
 
@@ -366,28 +386,25 @@ section .text .search_bar button {
     border-radius: 35px;
 }
 
-
 /*contact*/
 
-.contact {
+.address {
+    display: flex;
     width: 100%;
     padding: 20px 0;
-    display: flex;
     margin: 30px 0;
     justify-content: center;
+    align-items: center;
     color: #000;
     background-color: #98e54c;
+    gap: 3rem;
+    text-align: center;
 }
 
-.address {
+.contact-info {
     display: grid;
     grid-template-columns: (1fr, 1fr, 1fr);
     justify-content: center;
-    gap: 4rem;
-}
-
-.contact-info-item h3 {
-    text-align: center;
 }
 
 .contact-info-item a {
@@ -399,7 +416,7 @@ section .text .search_bar button {
 }
 
 .contact-info-item a:hover {
-    color: #fff;
+    color: #da6b1d;
 }
 
 .contact-info-item img {
@@ -414,10 +431,9 @@ section .text .search_bar button {
     justify-content: space-between;
 }
 
-.contact .address .place h3 {
+.contact .address .place {
     font-family: "Roboto";
     color: #000;
-    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -467,7 +483,6 @@ section .text .search_bar button {
     height: auto;
     margin-bottom: 2rem;
 }
-
 
 p.end {
     padding: 20px 0;
