@@ -129,13 +129,13 @@ section .text .booking button {
     width: 100%;
     height: auto;
     background: #000;
-    padding: 50px 0;
+    padding: 3rem;
 }
 
 .highlight .img_box {
     width: 100%;
     height: 450px;
-    padding: 0 2%;
+    gap: 1.5rem;
     display: flex;
     cursor: pointer;
 }
@@ -183,24 +183,24 @@ section .text .booking button {
     width: 100%;
     height: auto;
     display: flex;
+    padding: 3rem;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 20px;
+    justify-content: space-between;
     background-color: #000;
 }
 
-.description-box .d_text h1 {
+.description-box .d_text h2 {
     color: #da6b1d;
-    font-size: 65px;
+    font-size: 55px;
     font-family: 'Roboto';
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 }
 
-.description-box .d_text h2 {
+.description-box .d_text h3 {
     color: #fff;
     font-size: 45px;
     font-family: 'Roboto';
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .description-box .d_text .head_title {
@@ -227,7 +227,6 @@ section .text .booking button {
     background: #98e54c;
     font-size: 25px;
     border-radius: 100px;
-    margin-bottom:20px;
     font-family: "Roboto";
 }
 
@@ -236,13 +235,13 @@ section .text .booking button {
 }
 
 
-.description-box .dis_img {
+.description-box .description_img {
     width: 620px;
     border-radius: 35px;
     overflow: hidden;
 }
 
-.description-box .dis_img img {
+.description-box .description_img img {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -325,6 +324,7 @@ section .text .booking button {
     width: 100%;
     height: 80vh;
     background: #000;
+    padding: 3rem;
 }
 
 .banner .b_text {
@@ -377,8 +377,8 @@ section .text .booking button {
 }
 
 .banner img {
-    width: 95%;
-    height: 700px;
+    width: 100%;
+    height: 600px;
     display: flex;
     margin: 0 auto;
     object-fit: cover;
