@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-
 }
 
 body {
     background-color: #000;
     scroll-behavior: smooth;
 }
+
+/*************** HOME SECTION ****************/
 
 section {
     width: 100%;
@@ -55,18 +56,18 @@ section nav ul li a:hover {
 
 section .text {
     position: absolute;
-    top: 250px;
+    top: 25%;
     left: 8%;
 }
 
 section .text .word {
     color: #cfcfcf;
-    font-size: 15px;
+    font-size: 25px;
     letter-spacing: 1px;
 }
 
 section .text h1 {
-    font-size: 50px;
+    font-size: 55px;
     color: #fff;
     line-height: 65px;
 }
@@ -123,7 +124,7 @@ section .text .booking button {
     border: 0;
 }
 
-/*Highlight*/
+/*************** ABOUT SECTION ****************/
 
 .highlight {
     width: 100%;
@@ -177,7 +178,13 @@ section .text .booking button {
     border-radius: 35px;
 }
 
-/*description-box*/
+/*************** SPECIAL OFFERS ****************/
+
+.special-offers {
+    text-align: center;
+    color: #da6b1d;
+    font-size: 45px;
+}
 
 .description-box {
     width: 100%;
@@ -189,30 +196,23 @@ section .text .booking button {
     background-color: #000;
 }
 
-.description-box .d_text h2 {
-    color: #da6b1d;
-    font-size: 55px;
-    font-family: 'Roboto';
-    margin-bottom: 35px;
-}
-
-.description-box .d_text h3 {
+.description-box .description-content h3 {
     color: #fff;
-    font-size: 45px;
+    font-size: 35px;
     font-family: 'Roboto';
     margin-bottom: 15px;
 }
 
-.description-box .d_text .head_title {
+.description-box .description-content .head_title {
     margin-bottom: 15px;
     color: #fff;
 }
 
-.description-box .d_text .head_title p {
+.description-box .description-content .head_title p {
     font-size: 30px;
 }
 
-.description-box .d_text .desc {
+.description-box .description-content .text-description {
     width: 650px;
     text-align: justify;
     color: #cfcfcf;
@@ -220,7 +220,7 @@ section .text .booking button {
     margin-bottom: 20px;
 }
 
-.description-box .d_text .dis_btn {
+.description-box .description-content .description-btn {
     text-decoration: none;
     color: #000;
     padding: 10px 130px;
@@ -230,7 +230,7 @@ section .text .booking button {
     font-family: "Roboto";
 }
 
-.description-box .d_text .dis_btn:hover {
+.description-box .description-content .description-btn:hover {
     background-color: #da6b1d;
 }
 
@@ -248,7 +248,7 @@ section .text .booking button {
     border-radius: 35px;
 }
 
-/*menu*/
+/*************** MENU SECTION ****************/
 
 .menu {
     width: 100%;
@@ -256,15 +256,22 @@ section .text .booking button {
     background: #000;
 }
 
-.menu h1 {
+.menu h2 {
     color: #da6b1d;
-    font-size: 65px;
+    font-size: 55px;
     font-family: "Roboto";
     text-align: center;
     margin-bottom: 25px;
 }
 
-.menu .m_box {
+.menu h3 {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.menu .menu-box {
     width: 100%;
     height: auto;
     display: flex;
@@ -274,31 +281,36 @@ section .text .booking button {
     margin: 0 auto;
 }
 
-.menu .m_box .m_cards {
+.menu .menu-box .menu-cards {
     width: 620px;
     margin-bottom: 1rem;
 }
 
-.menu .m_box .m_cards .m_img {
+.menu .menu-box .menu-cards .menu-img {
     width: 620px;
     height: 620px;
     border-radius: 35px;
     overflow: hidden;
 }
 
-.menu .m_box .m_cards .m_img img {
+.menu .menu-box .menu-cards .menu-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.menu .m_box .m_cards h2 {
+.menu .menu-box .menu-cards h2 {
     color: #fff;
     text-align: center;
     margin: 10px 0;
 }
 
-.menu .m_box .m_cards .m_btn {
+.menu .menu-box .menu-cards h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu .menu-box .menu-cards .menu-btn {
     width: 100%;
     display: flex;
     align-items: center;
@@ -313,12 +325,12 @@ section .text .booking button {
     font-family: "Roboto";
 }
 
-.menu .m_box .m_cards .m_btn:hover {
+.menu .menu-box .menu-cards .menu-btn:hover {
     background-color: #da6b1d;
 }
 
 
-/*banner*/
+/*************** BANNER ****************/
 
 .banner {
     width: 100%;
@@ -327,11 +339,11 @@ section .text .booking button {
     padding: 3rem;
 }
 
-.banner .b_text {
+.banner .banner-text {
     position: absolute;
 }
 
-.banner .b_text h6 {
+.banner .banner-text h6 {
     color: #fff;
     letter-spacing: 1px;
     position: relative;
@@ -340,7 +352,7 @@ section .text .booking button {
     font-size: 13px;
 }
 
-.banner .b_text h1 {
+.banner .banner-text h1 {
     color: #fff;
     position: relative;
     top: 245px;
@@ -348,7 +360,7 @@ section .text .booking button {
     font-size: 40px;
 }
 
-.banner .b_text p {
+.banner .banner-text p {
     width: 550px;
     color: #fff;
     position: relative;
@@ -358,7 +370,7 @@ section .text .booking button {
     line-height: 23px;
 }
 
-.banner .b_text .m_btn {
+.banner .banner-text .menu-btn {
     width: 100%;
     position: relative;
     top: 280px;
@@ -372,7 +384,7 @@ section .text .booking button {
     font-family: "Roboto";
 }
 
-.banner .b_text .m_btn:hover {
+.banner .banner-text .menu-btn:hover {
     background-color: #da6b1d;
 }
 
@@ -386,7 +398,7 @@ section .text .booking button {
     border-radius: 35px;
 }
 
-/*contact*/
+/*************** CONTACTS SECTION ****************/
 
 .address {
     display: flex;
@@ -396,6 +408,7 @@ section .text .booking button {
     justify-content: center;
     align-items: center;
     color: #000;
+    margin-top: 5rem;
     background-color: #98e54c;
     gap: 3rem;
     text-align: center;
@@ -500,7 +513,7 @@ p.end span i {
     margin: 0 8px;
 }
 
-/*footer*/
+/*************** FOOTER ****************/
 
 footer {
     background-color: #000;
